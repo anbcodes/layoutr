@@ -1,5 +1,11 @@
 <template>
-  <v-combobox v-model="value" :items="fields" label="Size field" hide-details @change="change"></v-combobox>
+  <v-combobox
+    v-model="value"
+    :items="['None', ...fields]"
+    label="Size field"
+    hide-details
+    @change="change"
+  ></v-combobox>
 </template>
 <script>
 export default {
